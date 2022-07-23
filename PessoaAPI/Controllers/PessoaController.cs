@@ -3,9 +3,10 @@ using PessoaAPI.Model;
 using PessoaAPI.Services;
 
 namespace PessoaAPI.Controllers;
-
+//Versionando a nossa API - Instalar o Microsoft.AspNetCore.Mvc.Versioning.
+[ApiVersion("1")]//Adiciona a versão da Rota
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]/v{version:apiVersion}")]//E adiciona a rota. (Efetuar na classe Program)
 public class PessoaController : ControllerBase
 {
 

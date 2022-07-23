@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\OneDrive\\Documents\\PessoaApi\\PessoaAPI\\Pessoa.csproj": {}
+    "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\OneDrive\\Documents\\PessoaApi\\PessoaAPI\\Pessoa.csproj": {
+    "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\PessoaApi\\PessoaAPI\\Pessoa.csproj",
+        "projectUniqueName": "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj",
         "projectName": "Pessoa",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\PessoaApi\\PessoaAPI\\Pessoa.csproj",
+        "projectPath": "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\PessoaApi\\PessoaAPI\\obj\\",
+        "outputPath": "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -46,6 +46,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[6.0.1, )"
