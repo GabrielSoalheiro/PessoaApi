@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PessoaAPI.Migrations
 {
-    public partial class Pessoa : Migration
+    public partial class Api : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

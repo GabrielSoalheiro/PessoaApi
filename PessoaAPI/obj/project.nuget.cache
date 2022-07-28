@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eDaAgSgFuGasejgQug2T1K2tFyONEa75eg+Ilp9D4l2EZj/BoY1jqUdV6ITNAYz9iAZDT00sgadY4vfPaZ35cA==",
+  "dgSpecHash": "LRWAQHFHIHkjM/XPDEO4iNwZwTUpG265g+5TPGGGPEAR6VblTMFweLz+8JLB6PgnQSNycDHj64ZGIAxjNvBaPw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj",
+  "projectFilePath": "C:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",

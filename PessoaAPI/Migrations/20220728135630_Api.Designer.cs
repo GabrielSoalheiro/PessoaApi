@@ -10,8 +10,8 @@ using PessoaAPI.Model;
 namespace PessoaAPI.Migrations
 {
     [DbContext(typeof(MySQLContext))]
-    [Migration("20220723164309_Pessoa")]
-    partial class Pessoa
+    [Migration("20220728135630_Api")]
+    partial class Api
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

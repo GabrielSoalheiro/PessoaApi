@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
+using PessoaAPI.Model.Base;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PessoaAPI.Model;
 
-public class Pessoa
+public class Pessoa : BaseEntity
 {
-    [Column("id")]
-    public long Id { get; set; }
 
     [Column("nome")]
     public string Nome { get; set; }

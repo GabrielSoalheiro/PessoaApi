@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using PessoaAPI.Business;
+using PessoaAPI.Business.Implementations;
 using PessoaAPI.Model;
-using PessoaAPI.Services;
 
 namespace PessoaAPI.Controllers;
 //Versionando a nossa API - Instalar o Microsoft.AspNetCore.Mvc.Versioning.
@@ -13,14 +14,14 @@ public class PessoaController : ControllerBase
     private readonly ILogger<PessoaController> _logger;
 
     // Declaração do serviço utilizado
-    private IPessoaService _pessoaService;
+    private IPessoaBusiness _pessoaBusiness;
 
-    // Injeção de uma instância de IPessoaService
+    // Injeção de uma instância de IPessoaBusinessImplementation
     // ao criar uma instância de PessoaController
-    public PessoaController(ILogger<PessoaController> logger, IPessoaService pessoaService)
+    public PessoaController(ILogger<PessoaController> logger, IPessoaBusiness pessoaBusiness)
     {
         _logger = logger;
-        _pessoaService = pessoaService;
+        _pessoaBusiness = pessoaBusiness;
     }
 
     // Mapeia solicitações GET para https://localhost:{port}/api/pessoa
@@ -28,7 +29,7 @@ public class PessoaController : ControllerBase
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok(_pessoaService.FindAll());
+        return Ok(_pessoaBusiness.FindAll());
     }
 
     // Mapeia solicitações GET para https://localhost:{port}/api/pessoa/{id}
@@ -37,7 +38,7 @@ public class PessoaController : ControllerBase
     [HttpGet("{id}")]
     public IActionResult Get(long id)
     {
-        var pessoa = _pessoaService.FindByID(id);
+        var pessoa = _pessoaBusiness.FindByID(id);
         if (pessoa == null) return NotFound();
         return Ok(pessoa);
     }
@@ -48,7 +49,7 @@ public class PessoaController : ControllerBase
     public IActionResult Post([FromBody] Pessoa pessoa)
     {
         if (pessoa == null) return BadRequest();
-        return Ok(_pessoaService.Create(pessoa));
+        return Ok(_pessoaBusiness.Create(pessoa));
     }
 
     // Mapeia solicitações PUT para https://localhost:{port}/api/pessoa/
@@ -57,7 +58,7 @@ public class PessoaController : ControllerBase
     public IActionResult Put([FromBody] Pessoa pessoa)
     {
         if (pessoa == null) return BadRequest();
-        return Ok(_pessoaService.Update(pessoa));
+        return Ok(_pessoaBusiness.Update(pessoa));
     }
 
     // Mapeia solicitações DELETE para https://localhost:{port}/api/pessoa/{id}
@@ -65,7 +66,7 @@ public class PessoaController : ControllerBase
     [HttpDelete("{id}")]
     public IActionResult Delete(long id)
     {
-        _pessoaService.Delete(id);
+        _pessoaBusiness.Delete(id);
         return NoContent();
     }
 }

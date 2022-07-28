@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj": {}
+    "C:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj": {}
   },
   "projects": {
-    "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj": {
+    "C:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj",
         "projectName": "Pessoa",
-        "projectPath": "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj",
+        "projectPath": "C:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\Pessoa.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\OneDrive\\Desktop\\PessoaApi\\PessoaAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

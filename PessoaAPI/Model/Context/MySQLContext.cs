@@ -11,5 +11,6 @@ namespace PessoaAPI.Model
         public MySQLContext(DbContextOptions<MySQLContext> options) : base(options) { }
 
         public DbSet<Pessoa> Pessoas { get; set; }
+        public DbSet<Livro> Livros { get; set; }
     }
 }

@@ -1,15 +1,20 @@
 using Microsoft.EntityFrameworkCore;
+using PessoaAPI.Business;
+using PessoaAPI.Business.Implementations;
 using PessoaAPI.Model;
-using PessoaAPI.Services;
+using PessoaAPI.Repository;
+using PessoaAPI.Repository.Generic;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Adicione serviços ao contêiner.
-
 builder.Services.AddControllers();
 
 //Injenção de dependencia
-builder.Services.AddScoped<IPessoaService, PessoaServiceImplementation>();
+builder.Services.AddScoped<IPessoaBusiness, PessoaBusinessImplementation>();
+builder.Services.AddScoped<ILivroBusiness, LivroBusinessImplementation>();
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 
 //Conexão com o Banco MySql
 builder.Services.AddDbContext<MySQLContext>(o => o.UseMySql(
